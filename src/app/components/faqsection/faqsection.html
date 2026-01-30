@@ -1,0 +1,30 @@
+<div class="body-dark">
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold">FAQ's</h1>
+      <h2 class="text-4xl font-bold">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="my-30">
+      @for (item of faqs; track $index) {
+        <div class="bg-white text-black p-5 rounded-t-xl mt-5" (click)="toggleFaq(item)">
+          <div class="text-center flex justify-between">
+            <p class="">Q. {{ item.question }}</p>
+            <span class="icon">{{ item.isopen ? '-' : '+' }}</span>
+          </div>
+        </div>
+        @if (item.isopen) {
+          <div
+            class="bg-[#999] text-black p-5 rounded-b-xl overflow-hidden transition-all duration-500 ease-in-out"
+            [class.max-h-0]="!item.isopen"
+            [class.max-h-40]="item.isopen"
+            [class.opacity-0]="!item.isopen"
+            [class.opacity-100]="item.isopen"
+          >
+            <p>{{ item.answer }}</p>
+          </div>
+        }
+      }
+    </div>
+  </div>
+</div>

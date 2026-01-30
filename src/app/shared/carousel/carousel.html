@@ -1,0 +1,28 @@
+<swiper-container
+  slides-per-view="1"
+  space-between="24"
+  navigation="true"
+  pagination="true"
+  class="w-full"
+>
+  @for (item of [1, 2, 3, 4, 5]; track $index) {
+    <swiper-slide>
+      <div
+        class="rounded-2xl p-6 flex flex-col items-center justify-center w-full max-w-2xl mx-auto text-center"
+      >
+        <p class="text-gray-700 leading-relaxed">
+          Absolutely thrilled with my new products from Barunga! The craftsmanship is exceptional,
+          and the design is even more beautiful in person than it was online. The ordering process
+          was seamless, and the delivery team was professional and careful, placing the furniture
+          exactly where I wanted it. I've received so many compliments on my new pieces, and they
+          are both stylish and incredibly comfortable. This was a fantastic experience from start to
+          finish, and I highly recommend them.
+        </p>
+
+        <img src="/images/blog/img1.png" class="w-24 h-24 object-cover rounded-full mt-6" />
+
+        <p class="text-sm font-medium mt-4 underline">Blog title</p>
+      </div>
+    </swiper-slide>
+  }
+</swiper-container>

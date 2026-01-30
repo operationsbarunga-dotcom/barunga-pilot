@@ -1,0 +1,35 @@
+<div class="max-w-7xl mx-auto px-4 mb-30">
+  <!-- Section Title -->
+  <div class="py-20">
+    <h1 class="text-center text-4xl font-bold">Our Team</h1>
+  </div>
+
+  <!-- Team Grid -->
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 place-items-center"
+  >
+    @for (item of teamData; track item.id) {
+      <div
+        class="max-w-xs text-center sm:text-left space-y-3"
+      >
+        <img
+          [src]="item.img"
+          [alt]="item.name"
+          class="w-full h-64 object-cover rounded-xl mb-4"
+        />
+
+        <h2 class="font-bold text-lg underline">
+          {{ item.name }}
+        </h2>
+
+        <p class="text-sm text-gray-400">
+          {{ item.position }}
+        </p>
+
+        <p class="text-sm text-gray-500 leading-relaxed">
+          {{ item.description }}
+        </p>
+      </div>
+    }
+  </div>
+</div>

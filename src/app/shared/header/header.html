@@ -1,0 +1,106 @@
+<div class="body-dark">
+  <nav class="w-full">
+    <div class="max-w-6xl mx-auto flex items-center px-6 py-4 justify-between">
+      <img src="/logos/logo.jpg" alt="Logo" class="w-20 md:w-25 rounded-2xl" />
+
+      <ul class="gap-6 ml-auto hidden md:flex">
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >Testimonial</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <button aria-label="Toggle Menu" class="md:hidden text-white text-4xl" (click)="toggleMenu()">
+        ☰
+      </button>
+    </div>
+
+    @if (isOpen) {
+      <div class="md:hidden overflow-hidden transition-all duration-300 max-h-96 opacity-100">
+        <ul class="flex flex-col gap-4 px-6 pb-6 text-white text-lg">
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >
+              Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="relative inline-block cursor-pointer text-white transition-colors duration-300 hover:text-(--primaryColor) after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-(--primaryColor) after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    }
+  </nav>
+</div>

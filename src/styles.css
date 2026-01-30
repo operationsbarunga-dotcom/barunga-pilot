@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'tailwindcss';
 
-@import "tailwindcss";
+:root {
+  --primaryColor: #f9bf29;
+  background-color: white;
+  color: #000;
+}
+
+.body-dark {
+  background-color: black;
+  color: #ffffff;
+}
+
