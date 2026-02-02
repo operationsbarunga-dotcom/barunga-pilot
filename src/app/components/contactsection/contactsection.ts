@@ -15,31 +15,30 @@ export class Contactsection {
 
     const form = e.target as HTMLFormElement;
 
-    
     emailjs.sendForm(
       environment.emailServiceId,
       environment.emailTemplateId,
       form,
       environment.emailPublicKey
-    ).then(
-      () => {
-         emailjs.send(
-          environment.emailServiceId,
-          environment.autoReplyTemplateId,
-          {
-            name: (form.querySelector('[name="name"]') as HTMLInputElement)?.value,
-            email: (form.querySelector('[name="email"]') as HTMLInputElement)?.value,
-          },
-          environment.emailPublicKey
-        );
-        alert('Form Submitted Successfully');
-       form.reset();
-      },
-      () => {
-        alert('Failed to Send Message');
-      }
-    );
-
-
+    )
+    .then(() => {
+      return emailjs.send(
+        environment.emailServiceId,
+        environment.autoReplyTemplateId,
+        {
+          name: (form.querySelector('[name="firstname"]') as HTMLInputElement)?.value,
+          email: (form.querySelector('[name="email"]') as HTMLInputElement)?.value,
+        },
+        environment.emailPublicKey
+      );
+    })
+    .then(() => {
+      
+      alert("Submitted Succesfully");
+      form.reset();
+    })
+    .catch(() => {
+      alert('Failed to Send Message');
+    })
   }
 }
