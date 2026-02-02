@@ -8,6 +8,7 @@
   --primaryColor: #f9bf29;
   background-color: white;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 .body-dark {
